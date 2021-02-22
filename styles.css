@@ -1,0 +1,85 @@
+body{
+  background: #E5E5E5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{text-decoration: none;color:#526275;}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.category{
+  position: absolute;
+  top:0;
+  left:-5px;
+  width:100%;
+  height:100%;
+  background: #23856d;
+  border-radius:6px;
+  z-index: -1;
+}
+
+.card{
+  background:#fff;
+  border: 1px solid #E0E7F1;
+  border-radius:6px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 5px;
+}
+
+.avatar{
+  padding: 0 28px 10px 24px;
+}
+
+.title{
+  font-size: 16px;
+  font-weight: 600;
+  color:#263240;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin:0;
+}
+
+.card-content p{
+  padding-top: 8px;
+  margin: 0;
+  font-size: 14px;
+  color:#526275;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.options{position: absolute;bottom: -3px;}
+.time:before{content: url(./assets/icon-clock.svg);padding-right: 8px;}
+.date:before{content: url(./assets/icon-calendar-alt.svg);padding: 5px 8px 0;}
+.location:before{content: url(./assets/icon-map-pin.svg);padding-right:8px}
+.icon:before{position: relative;top:4px;;}
+
+
+@media all and (min-width: 768px){
+
+  .avatar{
+    padding-bottom: unset;
+  }
+
+  .card {
+  flex-direction: row;
+  width:688px;
+  height:116px;
+  margin:auto;
+  text-align: unset;
+  padding: unset;
+}
+
+.options{
+  right:24px;
+  bottom:unset;
+}
+
+}
